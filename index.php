@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Naam</title>
+    <title>Snakey</title>
 
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="css/Style.css">
@@ -10,7 +10,9 @@
     <script src="https://cdn-orig.socket.io/socket.io-1.4.5.js"></script>
 </head>
 <body>
-
+<h1>
+    Snakey 2k17
+</h1>
 
 <ul id="playerlist">
 

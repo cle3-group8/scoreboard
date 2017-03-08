@@ -2,15 +2,27 @@ var serverAddress = 'http://127.0.0.1:3000';
 var socket = io("http://game.maashaven.win:3000");
 var playernames = [];
 
-
 socket.on("newplayer", function (data) {
     console.log(data);
-    playernames.push(data.name);
-    var element = $("<li>" + data.name +  + data.score+ "</li>");
+    data.score = parseInt(data.score);
+
+    var playerNumber = playernames.push(data.name);
+    var element = $("<li id='player-" + playerNumber + "'>" + data.name  + " " + data.score+ "</li>");
+
+    socket.emit("playerid", {
+        "playerNumber": playerNumber
+    });
 
     element.css('background-color' , data.color);
-    $("#playerlist").prepend(element);
+    var listElement = $("#playerlist").prepend(element);
 
+    var scoreInterval = setInterval(function () {
+        //add to the score
+        data.score += 100;
+        $("#player-" + playerNumber).text(data.name  + " " + data.score);
+    }, 1000);
+
+    //clearInterval(scoreInterval)
 });
 
 socket.emit("scorebord", "hey");

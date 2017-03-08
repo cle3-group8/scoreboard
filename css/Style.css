@@ -2,12 +2,21 @@
 
     color: black;
     text-align: center;
-    background-color: ;
+    background-color:;
+    position: relative;
+    padding: 70px 0;
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
 }
-
 body {
     background-color: black;
 }
 ul {
     list-style: none;
+}
+h1 {
+    size: 80px;
+    color: purple;
+    text-align: center;
 }
