@@ -1,13 +1,10 @@
 #playerlist {
 
     color: black;
-    text-align: center;
     background-color:;
-    position: relative;
     padding: 70px 0;
-    width: 800px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 100px;
+    float:right;
 }
 body {
     background-color: black;
@@ -19,4 +16,9 @@ h1 {
     size: 80px;
     color: purple;
     text-align: center;
+}
+#avatar{
+    left: 0px;
+
+
 }

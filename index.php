@@ -18,6 +18,9 @@
 
 
 </ul>
+<ul id="avatar">
+
+</ul>
 
 
 

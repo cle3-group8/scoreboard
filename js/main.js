@@ -22,6 +22,11 @@ socket.on("newplayer", function (data) {
         $("#player-" + playerNumber).text(data.name  + " " + data.score);
     }, 1000);
 
+    var avatarelement = $("#avatar"). prepend(avatar);
+
+    var avatar  = $("<img src=\"https://api.adorable.io/avatars/285/"+playerNumber+".png\">");
+    avatarelement.append(avatar);
+
     //clearInterval(scoreInterval)
 });
 
