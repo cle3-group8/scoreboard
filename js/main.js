@@ -30,5 +30,5 @@ socket.on("newplayer", function (data) {
     //clearInterval(scoreInterval)
 });
 
-socket.emit("scorebord", "hey");
+socket.emit("scorebord", "faka nick");
 
