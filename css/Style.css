@@ -2,9 +2,8 @@
     color: black;
     background-color:;
     padding: 80px 0;
-    width: 1000px;
+    width: 100%;
     height:600px ;
-    float:right;
     font-size: x-large;
 }
 body {
@@ -15,16 +14,18 @@ ul {
     line-height: 300%;
 }
 li {
-    color:#9FB7FE ;
-    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    color:white ;
+    font-family: 'Open Sans', sans-serif;
     font-size: 50px;
     height: 100px;
+
+
 }
 h1 {
 
     color:#9FB7FE ;
     text-align: center;
-    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 80px;
     font-style: normal;
     font-variant: normal;
@@ -34,7 +35,7 @@ h1 {
 h2 {
     color: #235AFF;
     text-align: center;
-    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 50px;
     font-style: normal;
     font-variant: normal;
@@ -49,4 +50,8 @@ img {
     float: left;
     width: 100px;
     height: 100px;
+}
+li span {
+    padding-left: 20px;
+    line-height: 100px;
 }

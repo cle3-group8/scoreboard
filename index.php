@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Snakey</title>
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="css/Style.css">
     <script src="js/jquery.js"></script>
