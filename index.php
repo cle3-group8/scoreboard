@@ -11,9 +11,11 @@
 </head>
 <body>
 <h1>
-    Snakey 2k17
+    Snakey
 </h1>
-
+<h2>
+    Tweet mee!! #snakey
+</h2>
 <ul id="playerlist">
 
 
@@ -32,4 +34,5 @@
 <script src="js/main.js"></script>
 
 </body>
+
 </html>
