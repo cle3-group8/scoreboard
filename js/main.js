@@ -1,34 +1,41 @@
-var serverAddress = 'http://127.0.0.1:3000';
 var socket = io("http://game.maashaven.win:3000");
 var playernames = [];
 
 socket.on("newplayer", function (data) {
-    console.log(data);
+    /**
+     * Moet gecalled worden als iemand dood gaat
+     */
+    function dood() {
+        clearInterval(scoreInterval);
+    }
+
+    console.log("Nieuwe speler", data);
     data.score = parseInt(data.score);
 
+    //voeg de playernames toe aan de lijst en array
     var playerNumber = playernames.push(data.name);
-    var element = $("<li id='player-" + playerNumber + "'>" + data.name  + " " + data.score+ "</li>");
+    var element = $("<li id='player-" + playerNumber + "'>"+
+        "<span>" + data.name  + " " + data.score+ "</span></li>");
 
+    //zet de kleur van de user
+    element.css('background-color' , data.color);
+    var listElement = $("#playerlist").prepend(element);
+
+    //vertel de server dat de nieuwe player met id x is.
     socket.emit("playerid", {
         "playerNumber": playerNumber
     });
 
-    element.css('background-color' , data.color);
-    var listElement = $("#playerlist").prepend(element);
-
+    //update de score iedere .1 seconde
     var scoreInterval = setInterval(function () {
-        //add to the score
-        data.score += 100;
-        $("#player-" + playerNumber).text(data.name  + " " + data.score);
-    }, 1000);
+        //voeg 10 bij de score iedere .1 seconde
+        data.score += 10;
+        $("#player-" + playerNumber + " span").text(data.name  + " " + data.score);
+    }, 100);
 
-    var avatarelement = $("#avatar"). prepend(avatar);
-
-    var avatar  = $("<img src=\"https://api.adorable.io/avatars/285/"+playerNumber+".png\">");
-    avatarelement.append(avatar);
-
-    //clearInterval(scoreInterval)
+    //set the avatar
+    var avatar  = $("<img src=\"https://api.adorable.io/avatars/100/"+ playerNumber +".png\" height=\"100\">");
+    $("#player-" + playerNumber).append(avatar);
 });
 
 socket.emit("scorebord", "faka nick");
-

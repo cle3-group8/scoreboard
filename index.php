@@ -10,29 +10,14 @@
     <script src="https://cdn-orig.socket.io/socket.io-1.4.5.js"></script>
 </head>
 <body>
-<h1>
-    Snakey
-</h1>
-<h2>
-    Tweet mee!! #snakey
-</h2>
-<ul id="playerlist">
-
-
-</ul>
-<ul id="avatar">
-
-</ul>
-
-
-
-
-
-
-
-
-<script src="js/main.js"></script>
-
+    <h1>
+        Snakey
+    </h1>
+    <h2>
+        Tweet mee!! #snakey
+    </h2>
+    <ul id="playerlist">
+    </ul>
+    <script src="js/main.js"></script>
 </body>
-
 </html>
