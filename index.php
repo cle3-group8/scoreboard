@@ -10,6 +10,9 @@
     <script src="https://cdn-orig.socket.io/socket.io-1.4.5.js"></script>
 </head>
 <body>
+<div id="logo">
+    <img src="Snakey2.png">
+</div>
     <h1>
         Snakey
     </h1>
