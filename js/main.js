@@ -7,6 +7,8 @@ socket.on("newplayer", function (data) {
      */
     function dood() {
         clearInterval(scoreInterval);
+        var  doodScore = data.name += data.score;
+        console.log("doodScore");
     }
 
     console.log("Nieuwe speler", data);
@@ -36,6 +38,11 @@ socket.on("newplayer", function (data) {
     //set the avatar
     var avatar  = $("<img src=\"https://api.adorable.io/avatars/100/"+ playerNumber +".png\" height=\"100\">");
     $("#player-" + playerNumber).append(avatar);
+
+    /** Doodscore aanmaken/scoren bij een naam locken na dood*//
+
+    var doodScore = data.name , data.score;
+    
+
 });
 
-socket.emit("scorebord", "faka nick");

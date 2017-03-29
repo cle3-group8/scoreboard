@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="css/Style.css">
     <script src="js/jquery.js"></script>
     <script src="https://cdn-orig.socket.io/socket.io-1.4.5.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
 </head>
 <body>
-<div id="logo">
-    <img src="Snakey2.png">
+<div >
+    <img id = "logo" src="Snakey2.png">
 </div>
     <h1>
         Snakey

@@ -15,8 +15,8 @@ ul {
 }
 li {
     color:white ;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 50px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 60px;
     height: 100px;
 
 
@@ -25,8 +25,8 @@ h1 {
 
     color:#9FB7FE ;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 80px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 90px;
     font-style: normal;
     font-variant: normal;
     font-weight: 500;
@@ -35,8 +35,8 @@ h1 {
 h2 {
     color: #235AFF;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 50px;
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 60px;
     font-style: normal;
     font-variant: normal;
     font-weight: 500;
@@ -56,8 +56,8 @@ li span {
     line-height: 100px;
 }
 #logo {
-    width: 50px;
-    height: 50px;
+    width: 120px;
+    height: 100px;
   margin-right: 0px;
-    
+
 }
