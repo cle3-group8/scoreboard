@@ -6,8 +6,9 @@ socket.on("newplayer", function (data) {
      * Moet gecalled worden als iemand dood gaat
      */
     function dood() {
+        
         clearInterval(scoreInterval);
-        var  doodScore = data.name += data.score;
+        var  doodScore = data.player += data.score;
         console.log("doodScore");
     }
 
@@ -39,10 +40,11 @@ socket.on("newplayer", function (data) {
     var avatar  = $("<img src=\"https://api.adorable.io/avatars/100/"+ playerNumber +".png\" height=\"100\">");
     $("#player-" + playerNumber).append(avatar);
 
-    /** Doodscore aanmaken/scoren bij een naam locken na dood*//
+    /** Doodscore aanmaken/scoren bij een naam locken na dood*/
 
-    var doodScore = data.name , data.score;
-    
+
+
+
 
 });
 
