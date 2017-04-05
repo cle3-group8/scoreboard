@@ -16,18 +16,13 @@ socket.on("newplayer", function (data) {
     data.score = parseInt(data.score);
 
     //voeg de playernames toe aan de lijst en array
-    var playerNumber = playernames.push(data.name);
+    var playerNumber = data.id;
     var element = $("<li id='player-" + playerNumber + "'>"+
         "<span>" + data.name  + " " + data.score+ "</span></li>");
 
     //zet de kleur van de user
     element.css('background-color' , data.color);
     var listElement = $("#playerlist").prepend(element);
-
-    //vertel de server dat de nieuwe player met id x is.
-    socket.emit("playerid", {
-        "playerNumber": playerNumber
-    });
 
     //update de score iedere .1 seconde
     var scoreInterval = setInterval(function () {
