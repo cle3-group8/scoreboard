@@ -6,10 +6,10 @@ socket.on("newplayer", function (data) {
      * Moet gecalled worden als iemand dood gaat
      */
     function dood() {
-        
+        var id = playerNumber;
+        console.log("dead: " + id)
         clearInterval(scoreInterval);
-        var  doodScore = data.player += data.score;
-        console.log("doodScore");
+
     }
 
     console.log("Nieuwe speler", data);
@@ -41,10 +41,8 @@ socket.on("newplayer", function (data) {
     $("#player-" + playerNumber).append(avatar);
 
     /** Doodscore aanmaken/scoren bij een naam locken na dood*/
-
-
-
-
+    socket.on('deadplayer', function (data) {
+        if(data.player == playerNumber) dood();
+    });
 
 });
-
